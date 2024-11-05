@@ -1,11 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Welcome to My Website</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Markdown Notes</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Hello, I’m Hann Harri</h1>
-    <p>Welcome to my personal website where I showcase my data science projects!</p>
+    <header>
+        <h1>My Markdown Notes</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="loadMarkdown('notes/note1.md')">Note 1</a></li>
+                <li><a href="#" onclick="loadMarkdown('notes/note2.md')">Note 2</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="content">
+        <!-- Markdown content will be loaded here -->
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.0.12/marked.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
